@@ -55,7 +55,7 @@
   margin-bottom: 25px;
 }
 
-..seat-add-box input {
+.seat-add-box input {
   flex: 1;
   height: 56px;
   padding: 0 18px;
