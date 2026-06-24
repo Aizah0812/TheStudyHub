@@ -1,0 +1,238 @@
+/* =====================================
+   ADMIN DASHBOARD
+===================================== */
+
+.admin-dashboard {
+  width: 100%;
+}
+
+.admin-header {
+  margin-bottom: 35px;
+}
+
+.admin-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.admin-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.admin-card {
+  background: #fff;
+  border: 1px solid #eef2f7;
+  border-radius: 18px;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.admin-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(
+      79,
+      141,
+      247,
+      0.15
+    );
+
+  border-color: rgba(
+    79,
+    141,
+    247,
+    0.25
+  );
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 14px;
+
+  background: #f8fafc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4f8df7;
+
+  font-size: 1.2rem;
+
+  flex-shrink: 0;
+}
+
+.card-info h3 {
+  font-size: 1.6rem;
+  color: #111827;
+}
+
+.card-info span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* =====================================
+   BOTTOM SECTION
+===================================== */
+
+.dashboard-section {
+  margin-top: 25px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.dashboard-box {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 22px;
+
+  border: 1px solid #eef2f7;
+
+  transition: all 0.3s ease;
+}
+
+.dashboard-box:hover {
+  box-shadow:
+    0 10px 25px rgba(
+      79,
+      141,
+      247,
+      0.08
+    );
+}
+
+.dashboard-box h2 {
+  margin-bottom: 18px;
+
+  color: #111827;
+}
+
+/* =====================================
+   RECENT ACTIVITY
+===================================== */
+
+.activity-icon {
+  margin-right: 8px;
+  color: #4f8df7;
+}
+
+.dashboard-box p {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  color: #64748b;
+}
+
+/* =====================================
+   SYSTEM OVERVIEW
+===================================== */
+
+.overview-item {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 14px;
+
+  color: #64748b;
+}
+
+.overview-icon {
+  color: #4f8df7;
+}
+
+.overview-icon.occupied {
+  color: #ef4444;
+}
+
+/* =====================================
+   OCCUPANCY BAR
+===================================== */
+
+.occupancy-title {
+  margin-top: 20px;
+  margin-bottom: 12px;
+
+  color: #111827;
+}
+
+.occupancy-bar {
+  width: 100%;
+  height: 10px;
+
+  background: #e5e7eb;
+
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+.occupancy-fill {
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #4f8df7,
+    #2563eb
+  );
+
+  transition: width 0.5s ease;
+}
+
+.occupancy-text {
+  margin-top: 10px;
+
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1200px) {
+  .admin-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-section {
+    grid-template-columns: 1fr;
+  }
+}

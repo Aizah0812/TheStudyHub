@@ -1,0 +1,155 @@
+.auth-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+}
+
+.auth-left {
+  background: linear-gradient(135deg, #4f8df7, #3b7ae0);
+  color: white;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-left h2 {
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+}
+
+.auth-left p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.auth-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.auth-right {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-right h2 {
+  margin-bottom: 25px;
+  color: #111827;
+  font-size: 1.5rem;
+}
+
+.auth-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-right input {
+  padding: 13px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.auth-right input:focus {
+  outline: none;
+  border-color: #4f8df7;
+  box-shadow: 0 0 0 2px rgba(79, 141, 247, 0.1);
+}
+
+/* Apple-style forgot link */
+.forgot-link {
+  align-self: flex-end;
+  margin-top: -4px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #4f8df7;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.2s ease;
+}
+
+.forgot-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.auth-submit-btn {
+  background: #4f8df7;
+  color: white;
+  padding: 13px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: 0.3s ease;
+}
+
+.auth-submit-btn:hover {
+  background: #3b7ae0;
+  transform: translateY(-1px);
+}
+
+.switch-text {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.switch-text span {
+  color: #4f8df7;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.switch-text span:hover {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-left {
+    display: none;
+  }
+
+  .auth-page {
+    padding: 20px;
+  }
+
+  .auth-right {
+    padding: 30px;
+  }
+}

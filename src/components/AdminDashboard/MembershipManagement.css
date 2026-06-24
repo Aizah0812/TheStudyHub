@@ -1,0 +1,323 @@
+.membership-page {
+width: 100%;
+}
+
+/* ================= HEADER ================= */
+
+.membership-header {
+margin-bottom: 32px;
+}
+
+.membership-header h1 {
+font-size: 2rem;
+font-weight: 700;
+color: #111827;
+margin-bottom: 6px;
+}
+
+.membership-header p {
+color: #64748b;
+font-size: 0.95rem;
+}
+
+/* ================= SEARCH ================= */
+
+.membership-search {
+margin-bottom: 28px;
+}
+
+.membership-search input {
+width: 100%;
+max-width: 450px;
+
+height: 56px;
+
+padding: 0 18px;
+
+border: 1px solid #e5e7eb;
+border-radius: 16px;
+
+background: white;
+
+font-size: 0.95rem;
+
+transition: all 0.3s ease;
+}
+
+.membership-search input:focus {
+outline: none;
+
+border-color: #4f8df7;
+
+box-shadow: 0 0 0 4px rgba(79, 141, 247, 0.12);
+}
+
+/* ================= LIST ================= */
+
+.membership-list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+/* ================= CARD ================= */
+
+.membership-card {
+background: #ffffff;
+
+border: 1px solid #eef2f7;
+
+border-radius: 26px;
+
+padding: 26px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+gap: 28px;
+
+transition: all 0.3s ease;
+
+box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
+}
+
+.membership-card:hover {
+transform: translateY(-4px);
+
+box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+/* ================= LEFT ================= */
+
+.membership-left {
+flex: 1;
+}
+
+.membership-left h3 {
+font-size: 1.55rem;
+font-weight: 700;
+
+color: #111827;
+
+margin-bottom: 16px;
+}
+
+.membership-details {
+display: flex;
+flex-wrap: wrap;
+
+gap: 12px 24px;
+}
+
+.membership-details span {
+color: #64748b;
+
+font-size: 1rem;
+
+font-weight: 500;
+}
+
+/* ================= RIGHT ================= */
+
+.membership-right {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-wrap: wrap;
+
+gap: 12px;
+
+min-width: 500px;
+}
+
+/* ================= STATUS ================= */
+
+.membership-status {
+padding: 12px 20px;
+
+border-radius: 999px;
+
+font-size: 0.92rem;
+font-weight: 700;
+}
+
+.membership-status.pending {
+background: #fef3c7;
+color: #d97706;
+}
+
+.membership-status.paid {
+background: #dcfce7;
+color: #10b981;
+}
+
+.membership-status.rejected {
+background: #fee2e2;
+color: #ef4444;
+}
+
+.membership-status.expired {
+background: #e5e7eb;
+color: #374151;
+}
+
+/* ================= BUTTONS ================= */
+
+.renew-btn,
+.reject-btn,
+.paid-btn,
+.expired-btn,
+.proof-btn,
+.download-card-btn {
+border: none;
+
+border-radius: 14px;
+
+padding: 13px 20px;
+
+font-size: 0.92rem;
+font-weight: 600;
+
+cursor: pointer;
+
+text-decoration: none;
+
+transition: all 0.3s ease;
+}
+
+/* BLUE */
+
+.renew-btn,
+.download-card-btn {
+background: #4f8df7;
+color: white;
+}
+
+.renew-btn:hover,
+.download-card-btn:hover {
+background: #3d7ce8;
+transform: translateY(-2px);
+}
+
+/* PAYMENT PROOF */
+
+.proof-btn {
+background: #2563eb;
+color: white;
+}
+
+.proof-btn:hover {
+background: #1d4ed8;
+transform: translateY(-2px);
+}
+
+/* GREEN */
+
+.paid-btn {
+background: #10b981;
+color: white;
+}
+
+.paid-btn:hover {
+background: #059669;
+}
+
+/* RED */
+
+.reject-btn {
+background: #ef4444;
+color: white;
+}
+
+.reject-btn:hover {
+background: #dc2626;
+}
+
+/* DARK */
+
+.expired-btn {
+background: #1f2937;
+color: white;
+}
+
+.expired-btn:hover {
+background: #111827;
+}
+
+.renew-btn:disabled,
+.reject-btn:disabled {
+opacity: 0.7;
+cursor: not-allowed;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+.membership-card {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.membership-right {
+width: 100%;
+min-width: auto;
+justify-content: flex-start;
+}
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+.membership-header h1 {
+font-size: 1.6rem;
+}
+
+.membership-card {
+padding: 20px;
+border-radius: 22px;
+}
+
+.membership-left h3 {
+font-size: 1.3rem;
+}
+
+.membership-details {
+flex-direction: column;
+gap: 10px;
+}
+
+.membership-right {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+}
+
+.membership-status,
+.renew-btn,
+.reject-btn,
+.paid-btn,
+.expired-btn,
+.proof-btn,
+.download-card-btn {
+width: 100%;
+text-align: center;
+}
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+.membership-search input {
+height: 50px;
+}
+
+.membership-left h3 {
+font-size: 1.2rem;
+}
+
+.membership-details span {
+font-size: 0.92rem;
+}
+}

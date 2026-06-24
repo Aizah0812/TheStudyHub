@@ -1,0 +1,362 @@
+.seat-page {
+  width: 100%;
+}
+
+.seat-header {
+  margin-bottom: 30px;
+}
+
+.seat-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.seat-header p {
+  margin-top: 8px;
+  color: #64748b;
+}
+
+/* STATS */
+
+.seat-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #eef2f7;
+  border-radius: 18px;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.stat-card h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.stat-card span {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* ADD BOX */
+
+.seat-add-box {
+  display: flex;
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+..seat-add-box input {
+  flex: 1;
+  height: 56px;
+  padding: 0 18px;
+
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+}
+
+.seat-add-box input::placeholder {
+  color: #94a3b8;
+}
+
+.seat-add-box input:focus {
+  outline: none;
+  border-color: #4f8df7;
+  box-shadow: 0 0 0 4px rgba(79, 141, 247, 0.12);
+}
+.seat-add-box input:focus {
+  outline: none;
+
+  border-color: #4f8df7;
+}
+
+.seat-add-box button {
+  height: 52px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #4f8df7;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+}
+
+/* LIST */
+
+.seat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.seat-card {
+  background: white;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: 0.3s ease;
+}
+
+.seat-card:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(
+    79,
+    141,
+    247,
+    0.2
+  );
+
+  box-shadow:
+    0 10px 25px rgba(
+      79,
+      141,
+      247,
+      0.08
+    );
+}
+
+.seat-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.seat-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #64748b;
+}
+
+.seat-left h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* STATUS */
+
+.status {
+  display: inline-block;
+
+  margin-top: 5px;
+
+  padding: 5px 10px;
+
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+}
+
+.available {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.booked {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+
+/* ACTIONS */
+
+.seat-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle-btn,
+.delete-btn {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.toggle-btn {
+  background: #eef4ff;
+  color: #4f8df7;
+}
+
+.delete-btn {
+  background: #fef2f2;
+  color: #ef4444;
+}
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 768px) {
+  .seat-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .seat-header p {
+    font-size: 0.9rem;
+  }
+
+  .seat-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .seat-add-box {
+    flex-direction: column;
+  }
+
+  .seat-add-box input,
+  .seat-add-box button {
+    width: 100%;
+  }
+
+  .seat-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .seat-left {
+    width: 100%;
+  }
+
+  .seat-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .seat-user-info {
+    margin-top: 8px;
+  }
+
+  .seat-user-info p {
+    margin: 2px 0;
+    font-size: 0.82rem;
+    color: #64748b;
+  }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+  .seat-page {
+    width: 100%;
+  }
+
+  .seat-header {
+    margin-bottom: 20px;
+  }
+
+  .seat-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .seat-header p {
+    font-size: 0.85rem;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .stat-card span {
+    font-size: 0.8rem;
+  }
+
+  .seat-add-box input {
+    height: 50px;
+    font-size: 0.95rem;
+  }
+  .seat-add-box button {
+    height: 48px;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  .seat-card {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .seat-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .seat-left h3 {
+    font-size: 0.95rem;
+  }
+
+  .status {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  .seat-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .toggle-btn,
+  .delete-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .seat-user-info p {
+    font-size: 0.78rem;
+    word-break: break-word;
+  }
+}

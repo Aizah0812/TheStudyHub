@@ -1,0 +1,166 @@
+/* =====================================
+   REVENUE PAGE
+===================================== */
+
+.revenue-page {
+  width: 100%;
+}
+
+.revenue-header {
+  margin-bottom: 35px;
+}
+
+.revenue-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+.revenue-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* =====================================
+   REVENUE CARDS
+===================================== */
+
+.revenue-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+.revenue-card {
+  background: #ffffff;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 18px;
+
+  padding: 22px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.revenue-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(
+    79,
+    141,
+    247,
+    0.22
+  );
+
+  box-shadow:
+    0 15px 35px rgba(
+      79,
+      141,
+      247,
+      0.15
+    );
+}
+
+.revenue-icon {
+  font-size: 2rem;
+
+  color: #4f8df7;
+
+  margin-bottom: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.revenue-card:hover .revenue-icon {
+  transform: scale(1.15);
+}
+
+.revenue-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  color: #111827;
+
+  margin-bottom: 8px;
+}
+
+.revenue-card span {
+  color: #64748b;
+
+  font-size: 0.9rem;
+
+  font-weight: 500;
+}
+
+/* =====================================
+   CHART BOX
+===================================== */
+
+.chart-box {
+  background: #ffffff;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  transition: all 0.3s ease;
+}
+
+.chart-box:hover {
+  border-color: rgba(
+    79,
+    141,
+    247,
+    0.18
+  );
+
+  box-shadow:
+    0 10px 25px rgba(
+      79,
+      141,
+      247,
+      0.08
+    );
+}
+
+.chart-box h2 {
+  font-size: 1.1rem;
+
+  font-weight: 600;
+
+  color: #111827;
+
+  margin-bottom: 20px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1100px) {
+  .revenue-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .revenue-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .revenue-header h1 {
+    font-size: 1.9rem;
+  }
+}

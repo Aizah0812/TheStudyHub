@@ -1,0 +1,428 @@
+
+/* =====================================
+   GLOBAL FIX
+===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================
+   BASE
+===================================== */
+
+.admission-section {
+  padding: 100px 8%;
+  background: linear-gradient(to bottom, #ffffff, #f8fafc);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.header span {
+  color: #4f8df7;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: #0f172a;
+  margin-top: 10px;
+}
+
+/* =====================================
+   PRICING GRID
+===================================== */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+/* =====================================
+   CARD
+===================================== */
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  border: 1px solid rgba(226, 232, 240, 0.8);
+
+  transition: all 0.3s ease;
+
+  position: relative;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 18px 40px rgba(79, 141, 247, 0.12);
+}
+
+.card.active {
+  border: 2px solid #4f8df7;
+
+  box-shadow: 0 15px 40px rgba(79, 141, 247, 0.2);
+}
+
+.featured {
+  border: 1px solid #e2e8f0;
+}
+
+.tag {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  background: #4f8df7;
+
+  color: white;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.card h3 {
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  font-size: 2.2rem;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-bottom: 12px;
+
+  color: #475569;
+}
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.btn {
+  margin-top: 20px;
+
+  background: #4f8df7;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #2c64bd;
+}
+
+/* =====================================
+   FORM
+===================================== */
+
+.form-box {
+  max-width: 720px;
+  width: 100%;
+
+  margin: auto;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.form-box h3 {
+  text-align: center;
+
+  margin-bottom: 25px;
+
+  color: #111827;
+}
+
+/* =====================================
+   GRID
+===================================== */
+
+form .grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+input,
+select,
+textarea {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border-radius: 10px;
+
+  border: 1px solid #e2e8f0;
+
+  font-size: 0.95rem;
+
+  transition: all 0.3s ease;
+
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+
+  border-color: #4f8df7;
+
+  box-shadow: 0 0 0 3px rgba(79, 141, 247, 0.12);
+}
+
+textarea {
+  resize: vertical;
+
+  min-height: 120px;
+}
+
+/* =====================================
+   PLAN FIELDS
+===================================== */
+
+.plan-field {
+  background: #f8fafc;
+
+  margin-bottom: 12px;
+
+  font-weight: 500;
+}
+/* =====================================
+   PAYMENT SECTION
+===================================== */
+
+.payment-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding: 25px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.payment-section h4 {
+  color: #0f172a;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+.payment-section p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.payment-qr {
+  width: 220px;
+  height: 220px;
+
+  object-fit: contain;
+
+  background: white;
+
+  padding: 12px;
+
+  border-radius: 16px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.payment-qr:hover {
+  transform: scale(1.03);
+}
+
+.payment-section input[type="file"] {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 2px dashed #cbd5e1;
+
+  border-radius: 12px;
+
+  background: white;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.payment-section input[type="file"]:hover {
+  border-color: #4f8df7;
+}
+
+/* =====================================
+   DISABLED SUBMIT BUTTON
+===================================== */
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: #94a3b8;
+}
+
+.submit-btn:disabled:hover {
+  background: #94a3b8;
+  transform: none;
+}
+
+/* =====================================
+   SUBMIT BUTTON
+===================================== */
+
+.submit-btn {
+  width: 100%;
+
+  margin-top: 10px;
+
+  padding: 14px;
+
+  background: #4f8df7;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #2c64bd;
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+  .admission-section {
+    padding: 80px 6%;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  form .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box {
+    padding: 25px;
+  }
+  .payment-section {
+  padding: 20px;
+}
+
+.payment-qr {
+  width: 180px;
+  height: 180px;
+}
+
+.payment-section h4 {
+  font-size: 1.05rem;
+}
+
+.payment-section p {
+  font-size: 0.9rem;
+}
+}
+

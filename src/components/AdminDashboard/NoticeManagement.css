@@ -1,0 +1,209 @@
+/* =====================================
+   NOTICE PAGE
+===================================== */
+
+.notice-page {
+  width: 100%;
+}
+
+.notice-header {
+  margin-bottom: 30px;
+}
+
+.notice-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.notice-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* =====================================
+   NOTICE FORM
+===================================== */
+
+.notice-form {
+  background: #ffffff;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.notice-form input,
+.notice-form textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #dbe3ec;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  font-size: 0.95rem;
+
+  transition: all 0.3s ease;
+}
+
+.notice-form input:focus,
+.notice-form textarea:focus {
+  border-color: #4f8df7;
+
+  box-shadow:
+    0 0 0 4px rgba(
+      79,
+      141,
+      247,
+      0.1
+    );
+}
+
+.notice-form textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+.notice-form button {
+  width: fit-content;
+
+  background: #4f8df7;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 12px 22px;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.notice-form button:hover {
+  background: #2563eb;
+
+  transform: translateY(-2px);
+}
+
+/* =====================================
+   NOTICE LIST
+===================================== */
+
+.notice-list {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+  gap: 20px;
+}
+
+.notice-card {
+  background: #ffffff;
+
+  border: 1px solid #eef2f7;
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.notice-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(
+    79,
+    141,
+    247,
+    0.22
+  );
+
+  box-shadow:
+    0 15px 35px rgba(
+      79,
+      141,
+      247,
+      0.12
+    );
+}
+
+.notice-card h3 {
+  color: #111827;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 10px;
+}
+
+.notice-card p {
+  color: #64748b;
+
+  line-height: 1.6;
+
+  margin-bottom: 18px;
+}
+
+.delete-btn {
+  background: #ef4444;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 10px;
+
+  padding: 10px 16px;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+  .notice-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .notice-list {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-form {
+    padding: 18px;
+  }
+}
